@@ -1,0 +1,238 @@
+// Variables
+$primary-font: 'Montserrat', sans-serif;
+$primary-bg: #333;
+$secondary-bg: #f5f5f5;
+$accent-color: goldenrod;
+$primary-text-color: #fff;
+$secondary-text-color: #777;
+$border-color: #ccc;
+
+// Reinicios Globales & Tipografía
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: none;
+  font-family: $primary-font;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// Estilos globales para logo, título y subtítulo
+.logo {
+  display: block;
+  margin: 0 auto 20px auto;
+  max-height: 80px; 
+}
+
+.titulo-central {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: $accent-color;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.subtitulo-central {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: $secondary-text-color;
+  text-align: center;
+}
+
+// Encabezado y Navegación
+header {
+  .barra-envio {
+    background-color: black;
+    color: $primary-text-color;
+    text-align: center;
+    font-size: 10px;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .navbar {
+    border-bottom: 1px solid $border-color;
+
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+
+    .nav-link {
+      font-family: $primary-font;
+      font-weight: 400;
+      color: #333 !important;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $accent-color !important;
+      }
+    }
+  }
+}
+
+// Pie de página
+footer {
+  background-color: $primary-bg;
+  color: $primary-text-color;
+  text-align: center;
+  padding: 20px 0;
+  position: relative; 
+  width: 100%;
+}
+
+// Sección Central 
+.contenido-central-inicio {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+// Secciones compartidas (Index u otras)
+.imagen-index {
+  margin: 20px 0;
+
+  img {
+    width: 100%;
+    max-height: 1000px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+}
+
+// Productos
+.seccion-productos {
+  text-align: center;
+  margin-top: 5px;
+
+  .descripcion-productos {
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .card-title {
+      font-weight: bold;
+      color: #333;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.5;
+    }
+  }
+}
+
+// Nosotros
+.titulo-negro-generico {
+  font-size: x-large;
+  font-weight: bolder;
+  color: black;
+  text-align: center;
+}
+
+.titulo-negro-generico-izq {
+  font-size: x-large;
+  font-weight: bolder;
+  color: black;
+  text-align: left;
+}
+
+.row.gy-4 .border.rounded.shadow-sm {
+  background-color: #fff;
+  border: 1px solid $border-color;
+
+  h3 {
+    color: #333;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+}
+
+// Encuéntranos & Contacto
+.seccion-contenedor {
+  border: 2px solid $primary-bg;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  
+  .text-center {
+    p {
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+iframe {
+  border: none;
+}
+
+// Banner
+.banner {
+  text-align: center;
+  margin: 50px 0;
+  
+  img {
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+}
+
+// Formulario de Contacto
+form.w-50 {
+  input.form-control, 
+  textarea.form-control {
+    font-family: $primary-font;
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    font-family: $primary-font;
+    font-weight: 700;
+    background-color: $accent-color;
+    border-color: $accent-color;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      background-color: adjust-color($accent-color, $lightness: -10%);
+      border-color: adjust-color($accent-color, $lightness: -10%);
+    }
+  }
+}
+
+// Animaciones generales para botones
+.btn {
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+}

@@ -1,0 +1,196 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 20px auto;
+  max-height: 80px;
+}
+
+.titulo-central {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: goldenrod;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.subtitulo-central {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #777;
+  text-align: center;
+}
+
+header .barra-envio {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+}
+header .barra-envio p {
+  margin-bottom: 0;
+}
+header .navbar {
+  border-bottom: 1px solid #ccc;
+}
+header .navbar .navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+header .navbar .nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #333 !important;
+  transition: color 0.3s ease;
+}
+header .navbar .nav-link:hover {
+  color: goldenrod !important;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  width: 100%;
+}
+
+.contenido-central-inicio {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.imagen-index {
+  margin: 20px 0;
+}
+.imagen-index img {
+  width: 100%;
+  max-height: 1000px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.seccion-productos {
+  text-align: center;
+  margin-top: 5px;
+}
+.seccion-productos .descripcion-productos {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  color: #555;
+  line-height: 1.6;
+}
+.seccion-productos .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.seccion-productos .card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.seccion-productos .card .card-title {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.seccion-productos .card .card-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.titulo-negro-generico {
+  font-size: x-large;
+  font-weight: bolder;
+  color: black;
+  text-align: center;
+}
+
+.titulo-negro-generico-izq {
+  font-size: x-large;
+  font-weight: bolder;
+  color: black;
+  text-align: left;
+}
+
+.row.gy-4 .border.rounded.shadow-sm {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.row.gy-4 .border.rounded.shadow-sm h3 {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+.row.gy-4 .border.rounded.shadow-sm p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.seccion-contenedor {
+  border: 2px solid #333;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+.seccion-contenedor .text-center p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+iframe {
+  border: none;
+}
+
+.banner {
+  text-align: center;
+  margin: 50px 0;
+}
+.banner img {
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form.w-50 input.form-control,
+form.w-50 textarea.form-control {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+form.w-50 .btn-primary {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  background-color: goldenrod;
+  border-color: goldenrod;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+form.w-50 .btn-primary:hover {
+  transform: scale(1.05);
+  background-color: rgb(173.528, 131.34, 25.472);
+  border-color: rgb(173.528, 131.34, 25.472);
+}
+
+.btn {
+  transition: transform 0.3s ease;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/*# sourceMappingURL=styles.css.map */
